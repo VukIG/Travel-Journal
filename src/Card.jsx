@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { IoLocationSharp } from 'react-icons'
 function Card(props) {
   if (props == null)
     return;
@@ -8,7 +8,7 @@ function Card(props) {
       <img src={props.data.img} alt="" />
       <div className="articleText">
         <div className="location">
-          <i></i>
+          <IoLocationSharp />
           <p>{props.data}</p>
           <p className='viewOnGM'>View on Google maps</p>
         </div>
